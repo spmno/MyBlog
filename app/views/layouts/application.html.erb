@@ -24,8 +24,16 @@
       <ul class="nav navbar-nav">
         <li class="active"><%= link_to '文章列表', articles_path %></li>
         <li><%= link_to '关于我', about_path %></li>
+        <% if current_user %>
+            <li><%= link_to('登出', destroy_user_session_path, :method => :delete) %></li>
+            <li><%= link_to('修改密碼', edit_registration_path(:user)) %></li>
+        <% else %>
+            <li><%= link_to('註冊', new_registration_path(:user)) %></li>
+            <li><%= link_to('登入', new_session_path(:user)) %></li>
+        <% end %>
       </ul>
     </div>
+
   </div>
 </nav>
 
