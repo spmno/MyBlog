@@ -4,4 +4,8 @@ class WelcomeController < ApplicationController
     @articles = Article.all
   end
 
+  def about
+
+  end
+
 end

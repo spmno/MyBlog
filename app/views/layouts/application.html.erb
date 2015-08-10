@@ -17,12 +17,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Blog</a>
+      <%= link_to 'Blog', root_path, class: 'navbar-brand' %>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">文章列表</a></li>
-        <li><a href="#about">关于博主</a></li>
+        <li class="active"><%= link_to '文章列表', articles_path %></li>
+        <li><%= link_to '关于我', about_path %></li>
       </ul>
     </div>
   </div>
