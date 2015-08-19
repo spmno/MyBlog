@@ -13,7 +13,7 @@
     <div class="right_side">
       <h3>有用链接</h3>
       <% @shared_links.each do |shared_link| %>
-        <p><%= link_to shared_link.name, shared_link.link %></p>
+        <p><%= link_to(shared_link.name, shared_link.link) %></p>
       <% end %>
     </div>
   </div>

@@ -2,11 +2,11 @@
   <div class="col-sm-8">
     <%= form_for @link, url: shared_links_path do |f| %>
         <div class="form_content">
-          <%= f.label :title, "文章标题" %>
-          <%= f.text_field :title, class: "form-control" %>
+          <%= f.label :name, "链接名称" %>
+          <%= f.text_field :name, class: "form-control" %>
 
-          <%= f.label :content, "文章内容" %>
-          <%= f.text_area :content, class: "form-control", style: "resize:none;", rows: 10 %>
+          <%= f.label :link, "链接地址" %>
+          <%= f.text_area :link, class: "form-control", style: "resize:none;", rows: 10 %>
         </div>
         <%= f.submit "提交", class: "btn btn-primary" %>
     <% end %>
