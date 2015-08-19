@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'shared_link/new'
+  get 'shared_links/new'
 
-  get 'shared_link/edit'
+  get 'shared_links/edit'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -6,11 +6,15 @@
           <p><%= article.content %></p>
         </div>
     <% end %>
+    <%= paginate @articles %>
   </div>
 
   <div class="col-sm-4">
     <div class="right_side">
-      <h3>最新的评论</h3>
+      <h3>有用链接</h3>
+      <% @shared_links.each do |shared_link| %>
+        <p><%= link_to shared_link.name, shared_link.link %></p>
+      <% end %>
     </div>
   </div>
 </div>

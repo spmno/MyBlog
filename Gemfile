@@ -32,6 +32,9 @@ gem 'dotenv-rails'
 # devise
 gem 'devise'
 
+#pagenate
+gem 'kaminari'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
